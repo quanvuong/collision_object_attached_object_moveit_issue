@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/quan/moveit_ws/install/setup.sh

@@ -1,0 +1,2 @@
+attach_obj
+-DCATKIN_DEVEL_PREFIX=/home/quan/moveit_ws/devel -DCMAKE_INSTALL_PREFIX=/home/quan/moveit_ws/install -G Unix Makefiles
