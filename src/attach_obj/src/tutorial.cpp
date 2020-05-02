@@ -22,11 +22,6 @@ int main(int argc, char **argv)
     ros::AsyncSpinner spinner(1);
     spinner.start();
 
-    // BEGIN_TUTORIAL
-    //
-    // Setup
-    // ^^^^^
-    //
     // MoveIt! operates on sets of joints called "planning groups" and stores them in an object called
     // the `JointModelGroup`. Throughout MoveIt! the terms "planning group" and "joint model group"
     // are used interchangably.
@@ -44,9 +39,6 @@ int main(int argc, char **argv)
     const robot_state::JointModelGroup *joint_model_group =
         move_group.getCurrentState()->getJointModelGroup(PLANNING_GROUP);
 
-    // Visualization
-    // ^^^^^^^^^^^^^
-    //
     // The package MoveItVisualTools provides many capabilties for visualizing objects, robots,
     // and trajectories in RViz as well as debugging tools such as step-by-step introspection of a script
     namespace rvt = rviz_visual_tools;
@@ -101,7 +93,7 @@ int main(int argc, char **argv)
     collision_object.header.frame_id = move_group.getPlanningFrame();
     collision_object.id = "cylinder1";
 
-    // Define a box to add to the world.
+    // Define a cylinder to add to the world.
     // The height and radius might be reversed
     // https://groups.google.com/forum/#!topic/moveit-users/LCn5BPK2h5o
     shape_msgs::SolidPrimitive primitive;
@@ -114,19 +106,19 @@ int main(int argc, char **argv)
     tf2::Quaternion my_quaternion;
     my_quaternion.setRPY(1.6, 0, 0);
 
-    geometry_msgs::Pose box_pose;
+    geometry_msgs::Pose cyl_pose;
 
-    box_pose.orientation.x = my_quaternion[0];
-    box_pose.orientation.y = my_quaternion[1];
-    box_pose.orientation.z = my_quaternion[2];
-    box_pose.orientation.w = my_quaternion[3];
+    cyl_pose.orientation.x = my_quaternion[0];
+    cyl_pose.orientation.y = my_quaternion[1];
+    cyl_pose.orientation.z = my_quaternion[2];
+    cyl_pose.orientation.w = my_quaternion[3];
 
-    box_pose.position.x = 0.435;
-    box_pose.position.y = -0.2;
-    box_pose.position.z = 0.08;
+    cyl_pose.position.x = 0.435;
+    cyl_pose.position.y = -0.2;
+    cyl_pose.position.z = 0.08;
 
     collision_object.primitives.push_back(primitive);
-    collision_object.primitive_poses.push_back(box_pose);
+    collision_object.primitive_poses.push_back(cyl_pose);
     collision_object.operation = collision_object.ADD;
 
     // Add the mug and the cylinder into the planning scene
