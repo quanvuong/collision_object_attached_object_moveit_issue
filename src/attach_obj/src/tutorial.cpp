@@ -112,7 +112,7 @@ int main(int argc, char **argv)
 
     // Define a pose for the box (specified relative to frame_id)
     tf2::Quaternion my_quaternion;
-    my_quaternion.setRPY(1.5, 0, 0);
+    my_quaternion.setRPY(1.6, 0, 0);
 
     geometry_msgs::Pose box_pose;
 
