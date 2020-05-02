@@ -210,8 +210,8 @@ include_directories(
 # catkin_add_nosetests(test)
 
 
-add_executable(tutorial src/tutorial.cpp)
-target_link_libraries(tutorial ${catkin_LIBRARIES})
+add_executable(add_obstacle src/add_obstacle.cpp)
+target_link_libraries(add_obstacle ${catkin_LIBRARIES})
 
 add_executable(planning_no_obstacle src/planning_no_obstacle.cpp)
 target_link_libraries(planning_no_obstacle ${catkin_LIBRARIES})
