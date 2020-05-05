@@ -216,3 +216,17 @@ target_link_libraries(add_obstacle ${catkin_LIBRARIES})
 add_executable(planning_no_obstacle src/planning_no_obstacle.cpp)
 target_link_libraries(planning_no_obstacle ${catkin_LIBRARIES})
 
+add_executable(planning_with_obstacle src/planning_with_obstacle.cpp)
+target_link_libraries(planning_with_obstacle ${catkin_LIBRARIES})
+
+add_executable(move_group_tutorial src/move_group_tutorial.cpp)
+target_link_libraries(move_group_tutorial ${catkin_LIBRARIES})
+
+add_executable(move_group_tutorial_with_mesh src/move_group_tutorial_with_mesh.cpp)
+target_link_libraries(move_group_tutorial_with_mesh ${catkin_LIBRARIES})
+
+add_executable(planning_scene_ros_api_tutorial src/planning_scene_ros_api_tutorial.cpp)
+target_link_libraries(planning_scene_ros_api_tutorial ${catkin_LIBRARIES})
+
+add_executable(planning_with_obstacle_movegroup_api src/planning_with_obstacle_movegroup_api.cpp)
+target_link_libraries(planning_with_obstacle_movegroup_api ${catkin_LIBRARIES})
