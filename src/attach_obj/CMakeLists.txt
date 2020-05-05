@@ -230,3 +230,6 @@ target_link_libraries(planning_scene_ros_api_tutorial ${catkin_LIBRARIES})
 
 add_executable(planning_with_obstacle_movegroup_api src/planning_with_obstacle_movegroup_api.cpp)
 target_link_libraries(planning_with_obstacle_movegroup_api ${catkin_LIBRARIES})
+
+add_executable(planning_with_obstacle_movegroup_api_panda src/planning_with_obstacle_movegroup_api_panda.cpp)
+target_link_libraries(planning_with_obstacle_movegroup_api_panda ${catkin_LIBRARIES})
