@@ -4,6 +4,11 @@ An illustration of the problem is at illustration_of_problem.webm
 
 To view the video, you have to download it.
 
+I also uploaded the video below. You can see the issue from the 1 minute mark onwards.
+
+https://vimeo.com/415361046
+
+
 # Step to reproduce the problem with collision object and attached object passing through each other
 
 roslaunch panda_moveit_config demo.launch
