@@ -2,6 +2,8 @@
 
 An illustration of the problem is at illustration_of_problem.webm
 
+To view the video, you have to download it.
+
 # Step to reproduce the problem with collision object and attached object passing through each other
 
 roslaunch panda_moveit_config demo.launch
