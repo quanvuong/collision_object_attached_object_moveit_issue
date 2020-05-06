@@ -2,9 +2,7 @@
 
 roslaunch panda_moveit_config demo.launch
 
-roslaunch moveit_tutorials move_group_interface_tutorial.launch
-
-Add the motion planning plugin in Rviz and configure the plugin
+Add the motion planning plugin in Rviz and configure the plugin by changing the values of a few fields
 
     - Describe in step 1 of the quickstart in rviz tutorial http://docs.ros.org/melodic/api/moveit_tutorials/html/doc/quickstart_in_rviz/quickstart_in_rviz_tutorial.html
 
